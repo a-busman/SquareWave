@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
-
+- (IBAction)playTapped:(id)sender;
+- (IBAction)pauseTapped:(id)sender;
+- (IBAction)stopTapped:(id)sender;
+- (IBAction)switchToggled:(id)sender;
+- (IBAction)nextTapped:(id)sender;
+- (IBAction)prevToggled:(id)sender;
 @end
 
