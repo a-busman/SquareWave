@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "711EA75B8856B31B0B449B39207E94FD"
-               BlueprintName = "SSZipArchive"
+               BlueprintIdentifier = "4629CA540A48DE38D6518F9A883D1E08"
+               BlueprintName = "MarqueeLabel"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libSSZipArchive.a">
+               BuildableName = "libMarqueeLabel.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -10,4 +10,11 @@
 
 @interface MainContainerViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *songListView;
+@property (weak, nonatomic) IBOutlet UIView *nowPlayingView;
+@property (weak, nonatomic) IBOutlet UIView *shadowView;
+@property (weak, nonatomic) IBOutlet UITabBar *tabBar;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *nowPlayingViewTopConstraint;
+
 @end

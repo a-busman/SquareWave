@@ -208,6 +208,7 @@
                                     <tabBarItem title="Games" id="QW0-Hx-qjb"/>
                                     <tabBarItem title="Consoles" id="Zwq-g0-WYz"/>
                                     <tabBarItem title="Artists" id="col-dy-6Gu"/>
+                                    <tabBarItem title="Playlists" id="o6a-km-6sD"/>
                                     <tabBarItem systemItem="more" id="Y07-La-cd4"/>
                                 </items>
                             </tabBar>
@@ -238,6 +239,8 @@
                         <outlet property="nowPlayingViewTopConstraint" destination="Ij9-lu-k8L" id="aTp-5t-8w3"/>
                         <outlet property="shadowView" destination="U2d-lP-pxm" id="eGT-r3-8T9"/>
                         <outlet property="songListView" destination="XVt-y0-glK" id="GOB-Ub-lp5"/>
+                        <outlet property="tabBar" destination="RJZ-bC-b4I" id="oTG-ud-gEv"/>
+                        <outlet property="view" destination="tlk-Sc-ev6" id="7LN-ul-kUH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibv-dg-X4R" sceneMemberID="firstResponder"/>

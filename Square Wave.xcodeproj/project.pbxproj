@@ -70,6 +70,7 @@
 		FA778BFD20A1FE5B00576829 /* SongListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA778BFC20A1FE5B00576829 /* SongListViewController.m */; };
 		FA778C0020A1FE6F00576829 /* NowPlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA778BFF20A1FE6F00576829 /* NowPlayingViewController.m */; };
 		FA778C0320A2003600576829 /* FileEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FA778C0220A2003600576829 /* FileEngine.m */; };
+		FA83D08620ADCF3700479E45 /* ScrubBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FA83D08520ADCF3700479E45 /* ScrubBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -216,6 +217,8 @@
 		FA778BFF20A1FE6F00576829 /* NowPlayingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NowPlayingViewController.m; sourceTree = "<group>"; };
 		FA778C0120A2003600576829 /* FileEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileEngine.h; sourceTree = "<group>"; };
 		FA778C0220A2003600576829 /* FileEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileEngine.m; sourceTree = "<group>"; };
+		FA83D08420ADCF3700479E45 /* ScrubBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrubBar.h; sourceTree = "<group>"; };
+		FA83D08520ADCF3700479E45 /* ScrubBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrubBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +273,7 @@
 		FA6A6D51209E8A590026E38B /* Square Wave */ = {
 			isa = PBXGroup;
 			children = (
+				FA83D08320ADCF1A00479E45 /* Views */,
 				FA778BF720A1FC5F00576829 /* View Controllers */,
 				FA778B54209FC8AF00576829 /* Super Mario Bros. (1985-09-13)(Nintendo EAD)(Nintendo).nsf */,
 				FA778AAD209E903300576829 /* gme */,
@@ -415,6 +419,15 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		FA83D08320ADCF1A00479E45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA83D08420ADCF3700479E45 /* ScrubBar.h */,
+				FA83D08520ADCF3700479E45 /* ScrubBar.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -544,6 +557,7 @@
 				FA778BD420A0F2E300576829 /* Classic_Emu.cpp in Sources */,
 				FA778BFD20A1FE5B00576829 /* SongListViewController.m in Sources */,
 				FA778BD320A0F2E300576829 /* Multi_Buffer.cpp in Sources */,
+				FA83D08620ADCF3700479E45 /* ScrubBar.m in Sources */,
 				FA778BEC20A0F2E300576829 /* Nsfe_Emu.cpp in Sources */,
 				FA778BF020A0F2E300576829 /* Gb_Oscs.cpp in Sources */,
 				FA778BDB20A0F2E300576829 /* Nes_Fme7_Apu.cpp in Sources */,

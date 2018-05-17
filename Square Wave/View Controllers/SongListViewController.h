@@ -10,4 +10,6 @@
 
 @interface SongListViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @end

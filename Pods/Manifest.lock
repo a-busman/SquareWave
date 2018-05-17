@@ -1,16 +1,22 @@
 PODS:
+  - MarqueeLabel (3.1.4):
+    - MarqueeLabel/ObjC (= 3.1.4)
+  - MarqueeLabel/ObjC (3.1.4)
   - SSZipArchive (2.1.1)
 
 DEPENDENCIES:
+  - MarqueeLabel
   - SSZipArchive
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - MarqueeLabel
     - SSZipArchive
 
 SPEC CHECKSUMS:
+  MarqueeLabel: bf768455fe88d427f71476ebb23f9092b660f40b
   SSZipArchive: 14401ade5f8e82aba1ff03e9f88e9de60937ae60
 
-PODFILE CHECKSUM: d5d0ed53ae3a189e27fa26df3687e5ed2b4b00fd
+PODFILE CHECKSUM: 8806428350b9fb5e6a9a997c8fd1652b21535786
 
 COCOAPODS: 1.5.2
