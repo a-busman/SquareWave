@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E19DA46FAC41F5D43D9D03CE /* libPods-Square Wave.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66847C54B72425E53889A2F9 /* libPods-Square Wave.a */; };
 		FA45A580209E8CCE008D6D60 /* test.nsf in Resources */ = {isa = PBXBuildFile; fileRef = FA45A57F209E8CCE008D6D60 /* test.nsf */; };
 		FA6A6D54209E8A590026E38B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6A6D53209E8A590026E38B /* AppDelegate.m */; };
 		FA6A6D57209E8A590026E38B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6A6D56209E8A590026E38B /* ViewController.m */; };
@@ -68,6 +69,7 @@
 		FA778BFA20A1FC8400576829 /* MainContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA778BF920A1FC8400576829 /* MainContainerViewController.m */; };
 		FA778BFD20A1FE5B00576829 /* SongListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA778BFC20A1FE5B00576829 /* SongListViewController.m */; };
 		FA778C0020A1FE6F00576829 /* NowPlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA778BFF20A1FE6F00576829 /* NowPlayingViewController.m */; };
+		FA778C0320A2003600576829 /* FileEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FA778C0220A2003600576829 /* FileEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -84,6 +86,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0505E3DB8180A4D3BE6F2769 /* Pods-Square Wave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Square Wave.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Square Wave/Pods-Square Wave.debug.xcconfig"; sourceTree = "<group>"; };
+		14818D8146FD1F5CAF143722 /* Pods-Square Wave.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Square Wave.release.xcconfig"; path = "Pods/Target Support Files/Pods-Square Wave/Pods-Square Wave.release.xcconfig"; sourceTree = "<group>"; };
+		66847C54B72425E53889A2F9 /* libPods-Square Wave.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Square Wave.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA45A57F209E8CCE008D6D60 /* test.nsf */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.nsf; sourceTree = "<group>"; };
 		FA6A6D4F209E8A590026E38B /* Square Wave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Square Wave.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6A6D52209E8A590026E38B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -209,6 +214,8 @@
 		FA778BFC20A1FE5B00576829 /* SongListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongListViewController.m; sourceTree = "<group>"; };
 		FA778BFE20A1FE6F00576829 /* NowPlayingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NowPlayingViewController.h; sourceTree = "<group>"; };
 		FA778BFF20A1FE6F00576829 /* NowPlayingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NowPlayingViewController.m; sourceTree = "<group>"; };
+		FA778C0120A2003600576829 /* FileEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileEngine.h; sourceTree = "<group>"; };
+		FA778C0220A2003600576829 /* FileEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileEngine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,16 +224,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA778B5920A0AA2300576829 /* CoreData.framework in Frameworks */,
+				E19DA46FAC41F5D43D9D03CE /* libPods-Square Wave.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		885228C2D39C358EF5CC5929 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0505E3DB8180A4D3BE6F2769 /* Pods-Square Wave.debug.xcconfig */,
+				14818D8146FD1F5CAF143722 /* Pods-Square Wave.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FA45A57C209E8BA4008D6D60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				FA778B5820A0AA2300576829 /* CoreData.framework */,
+				66847C54B72425E53889A2F9 /* libPods-Square Wave.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -237,6 +255,7 @@
 				FA6A6D51209E8A590026E38B /* Square Wave */,
 				FA6A6D50209E8A590026E38B /* Products */,
 				FA45A57C209E8BA4008D6D60 /* Frameworks */,
+				885228C2D39C358EF5CC5929 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -268,6 +287,8 @@
 				FA778B51209F989C00576829 /* AudioEngine.m */,
 				FA778B53209F98BE00576829 /* AudioEngine.h */,
 				FA778B5A20A0AA7400576829 /* Model.xcdatamodeld */,
+				FA778C0120A2003600576829 /* FileEngine.h */,
+				FA778C0220A2003600576829 /* FileEngine.m */,
 			);
 			path = "Square Wave";
 			sourceTree = "<group>";
@@ -401,6 +422,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA6A6D65209E8A5A0026E38B /* Build configuration list for PBXNativeTarget "Square Wave" */;
 			buildPhases = (
+				4418E5067DF41AC8EB84A9AA /* [CP] Check Pods Manifest.lock */,
 				FA6A6D4B209E8A590026E38B /* Sources */,
 				FA6A6D4C209E8A590026E38B /* Frameworks */,
 				FA6A6D4D209E8A590026E38B /* Resources */,
@@ -463,6 +485,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4418E5067DF41AC8EB84A9AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Square Wave-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA6A6D4B209E8A590026E38B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -504,6 +547,7 @@
 				FA778BEC20A0F2E300576829 /* Nsfe_Emu.cpp in Sources */,
 				FA778BF020A0F2E300576829 /* Gb_Oscs.cpp in Sources */,
 				FA778BDB20A0F2E300576829 /* Nes_Fme7_Apu.cpp in Sources */,
+				FA778C0320A2003600576829 /* FileEngine.m in Sources */,
 				FA778C0020A1FE6F00576829 /* NowPlayingViewController.m in Sources */,
 				FA778BED20A0F2E300576829 /* Vgm_Emu.cpp in Sources */,
 				FA778BF320A0F2E300576829 /* Hes_Apu.cpp in Sources */,
@@ -598,7 +642,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -650,7 +694,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -659,11 +703,13 @@
 		};
 		FA6A6D66209E8A5A0026E38B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0505E3DB8180A4D3BE6F2769 /* Pods-Square Wave.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D9J98STRHA;
 				INFOPLIST_FILE = "Square Wave/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -681,11 +727,13 @@
 		};
 		FA6A6D67209E8A5A0026E38B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14818D8146FD1F5CAF143722 /* Pods-Square Wave.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D9J98STRHA;
 				INFOPLIST_FILE = "Square Wave/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

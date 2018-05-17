@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FileEngine.h"
 
 @interface AppDelegate ()
 
@@ -25,6 +26,7 @@
 
 - (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
     NSLog(@"URL: %@", url.absoluteString);
+    [FileEngine addFile:url];
     return YES;
 }
 
@@ -60,7 +62,7 @@
     NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
     if (managedObjectContext != nil) {
         if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            NSLog(@"Unresolved error while saving context %@, %@", error, [error userInfo]);
             abort();
         }
     }
@@ -74,7 +76,7 @@
     NSPersistentStoreCoordinator *coordinator = [self persistenStoreCoordinator];
     if (coordinator != nil) {
         _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
-        [_managedObjectContext setPersistentStoreCoordinator: coordinator];
+        [_managedObjectContext setPersistentStoreCoordinator:coordinator];
     }
     return _managedObjectContext;
 }

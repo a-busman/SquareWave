@@ -182,7 +182,7 @@ void AudioEngineOutputBufferCallback(void * inUserData, AudioQueueRef inAQ, Audi
     }
 }
 
-void handle_error(const char* str) {
+static void handle_error(const char* str) {
     if (str) {
         NSLog(@"%@", [[NSString alloc] initWithUTF8String:str]);
     }
